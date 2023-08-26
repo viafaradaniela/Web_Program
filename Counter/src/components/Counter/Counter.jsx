@@ -4,12 +4,9 @@ import './Counter.css'
 
 export default function Counter ({ onClick, label }) {
     
-    return (
-        
+    return ( 
       <>
-      
-        <button type='button' className='button-style' onClick={onClick}>{label}</button>
-
+       <button type='button' className='button-style' onClick={onClick}>{label}</button>
       </>
     )
     

@@ -4,33 +4,28 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
 export function App () {
-    const buttonContainerStyle = {
-      margin: '10px auto'
-    }
   
-    const [contador, setContador] = useState(0)
+    const [counter, setCounter] = useState(0)
   
     const add = () => {
-      setContador(contador + 1)
+      setCounter(counter + 1)
     }
   
     const reset = () => {
-      setContador(0)
+      setCounter(0)
     }
   
     const subtract = () => {
-      setContador(contador > 0 ? contador - 1 : contador)
+      setCounter(counter > 0 ? counter - 1 : counter)
     }
-  
-    console.log(contador)
   
     return (
       <>
-          <Header value={contador} />
-          <Counter onClick={subtract} label='-' />
-          <Counter onClick={reset} label='Reset' />
-          <Counter onClick={add} label='+' />
-        <Footer />
+          <Header value={counter}/>
+          <Counter onClick={add} label='+'/>
+          <Counter onClick={subtract} label='-'/>
+          <Counter onClick={reset} label='Reset'/>
+          <Footer />
       </>
   
     )

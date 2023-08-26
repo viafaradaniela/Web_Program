@@ -14,10 +14,13 @@ button {
     align-items: center;
     justify-content: center;
   }
+
   button:hover {
     border-color: rgb(254, 34, 144);
   }
+
   button:focus,
+  
   button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }

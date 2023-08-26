@@ -3,10 +3,10 @@ import './Footer.css'
 
 export default function Footer(){
     return (
-        <>
+       <>
         <footer>
-        <h3>Daniela Viafara Delgado - A00372426</h3>
+         <h3>Daniela Viafara Delgado - A00372426</h3>
         </footer>
-        </>   
+       </>   
     )
 }

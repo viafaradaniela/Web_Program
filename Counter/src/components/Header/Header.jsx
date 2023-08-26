@@ -5,12 +5,12 @@ export default function Header({value}){
 
 return (
 <>
- <header>
+  <header>
    <h1>DigiCounter</h1>
- </header>
-<div>
+  </header>
+ <div>
    <h2>{value}</h2>
-</div>
+ </div>
 </>
 )
 }
