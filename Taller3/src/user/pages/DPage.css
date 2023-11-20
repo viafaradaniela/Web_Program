@@ -1,0 +1,98 @@
+.dashboard-container {
+  position: relative;
+  padding: 20px;
+  margin-left: -10px;
+}
+
+.logo2 {
+  position: absolute;
+  top: 20px;
+  right: 190px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
+}
+
+.boton-logOut {
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  max-width: 100px;
+  width: 30%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: #0f96bf;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.movie-posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 45px;
+  margin-left: 50px;
+}
+
+.movie-poster {
+  position: relative;
+  flex: 0 0 18%;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: filter 0.3s ease;
+}
+
+.movie-poster:hover {
+  filter: blur(3px);
+}
+
+.movie-poster img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.movie-poster:hover img {
+  transform: scale(1.1);
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0px 4px 13.9px 0px rgba(255, 255, 255, 0.21);
+}
+
+.movie-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.movie-info p.title {
+  color: rgb(36, 36, 36);
+  font-weight: bold;
+  text-align: left;
+}
+
+.movie-info p.date {
+  color: rgb(36, 36, 36);
+  font-weight: 600;
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  color: #ffff;
+  margin-left: 47px;
+  font-family: 'Poppins', sans-serif;
+}
