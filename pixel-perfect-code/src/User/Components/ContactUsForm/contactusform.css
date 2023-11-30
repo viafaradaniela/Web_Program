@@ -1,0 +1,159 @@
+.contact-us {
+    display: flex;
+    align-items: center;
+    margin: 0 160px 0;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.title-contactus-container h2 {
+    margin: 0;
+    font-size: 105px;
+}
+
+.title-contactus-container p {
+    margin: 0;
+    padding: 0 80px 0 0;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}
+
+.contact-us-form input {
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    background-color: transparent;
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    margin: 10px 0;
+    padding: 20px 25px;
+    font-size: 18px;
+}
+
+.contact-us-form input::placeholder {
+    color: var(--color-text);
+}
+
+#brief {
+    background-color: transparent;
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    padding: 10px 20px;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+#brief::placeholder {
+    color: var(--color-text);
+    font-family: 'Lato', sans-serif;
+}
+
+#btn-contactus {
+    background-color: var(--color-text);
+    margin: 10px 0 0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: var(--color-bg);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width : 768px) {
+    .contact-us {
+        padding: 0;
+        margin: 10px 50px;
+        height: 100vh;
+    }
+
+    .title-contactus-container {
+        width: 50%;
+    }
+
+    .title-contactus-container h2 {
+        font-size: 60px;
+        margin: 16px 0;
+    }
+    .title-contactus-container p {
+        font-size: 18px;
+        padding: 0 20px 0 0;
+    }
+
+    .contact-us-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-us-form input {
+        width: calc(100% - 40px);
+        margin: 0 0 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .contact-us {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        height: 90vh;
+    }
+
+    .title-contactus-container {
+        width: auto;
+    }
+
+    .title-contactus-container h1 {
+        font-size: 50px;
+    }
+
+    .title-contactus-container p {
+        display: none;
+    }
+
+    .contact-us-form {
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .contact-us-form input {
+        font-size: 18px;
+        width: calc(100% - 40px);
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
+
+    #brief {
+        width: calc(100% - 40px);
+        margin: 10px auto;
+        padding: 10px 20px;
+    }
+
+
+    #brief::placeholder {
+        font-size: 16px;
+    }
+
+    #btn-contactus {
+        padding: 10px 30px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+}

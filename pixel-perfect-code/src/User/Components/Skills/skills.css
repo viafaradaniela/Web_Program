@@ -1,0 +1,182 @@
+
+.skill-section {
+    margin-bottom: 180px;
+}
+.title-container { 
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px;
+}
+.title-container p {
+font-size: 18px;
+font-weight: 300;
+margin: 0;
+}
+
+.title-container h2 {
+position: relative;
+font-size: 95px;
+font-weight: 300;
+margin: 0 0 60px;
+}
+
+.title-container span { 
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: #F8F9FA;
+}
+.skills-container { 
+    display: grid;
+    grid-template-columns: 309px 309px 309px;
+    grid-template-rows: 278px 278px;
+    gap: 50px;
+    margin: 0 200px;
+}
+
+.impar-container {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--button-secondary);
+}
+
+.par-container { 
+    padding: 30px;
+    background-color: #252223;
+    border-radius: 10px;
+}
+
+@media (max-width : 1440px) {
+    .title-container { 
+        margin: 0 150px;
+        transition: 300ms;
+    }
+    
+    .skills-container { 
+        margin: 0 150px;
+        transition: 300ms;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    }
+    
+   
+  }
+
+  @media screen and (max-width : 768px) {
+    .skill-section {
+        margin: 0 0 60px;
+    }
+    .title-container {
+        margin:20px 60px 10px;
+    }
+    .title-container p {
+        font-size: 20px;
+        margin: 0;
+    }
+    .title-container h2 {
+        font-size: 60px;
+        margin: 0 0 20px;
+    }
+    .title-container span {
+        top: 70px;
+    }
+    .skills-container {
+        margin: 10px 50px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(2, 200px);
+        gap: 20px;
+    }
+    .impar-container {
+        padding: 20px;
+    }
+    .impar-container img {
+       width: 20%;
+    }
+    .impar-container p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .impar-container h3 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .par-container {
+        padding: 20px;
+    }
+    .par-container img {
+       width: 20%;
+    }
+    .par-container p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .par-container h3 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+  }
+
+
+
+  @media screen and (max-width : 425px) {
+    .skill-section {
+        margin: 0 0 60px;
+    }
+    .title-container {
+        margin:20px 60px 10px;
+    }
+    .title-container p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .title-container h2 {
+        font-size: 40px;
+        margin: 0 0 20px;
+    }
+    .title-container span {
+        top: 50px;
+    }
+    .skills-container {
+        margin: 10px 50px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 155px);
+        grid-template-rows: repeat(3, 155px);
+        gap: 20px;
+    }
+    .impar-container {
+        padding: 10px;
+    }
+    .impar-container img {
+       width: 15%;
+    }
+    .impar-container p {
+        font-weight: 300;
+        margin: 0;
+        font-size: 13px;
+    }
+    .impar-container h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .par-container {
+        padding: 10px;
+    }
+    .par-container img {
+       width: 15%;
+    }
+    .par-container p {
+        font-weight: 300;
+        margin: 0;
+        font-size: 13px;
+    }
+    .par-container h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+  }
